@@ -2,8 +2,8 @@ def solution(arr, intervals):
     answer = []
     
     for s, e in intervals:
-        a = arr[s:e+1]
-        for i in a:
-            answer.append(i)
+        
+        # 리스트는 +로 이어붙이기가 가능하다
+        answer += arr[s:e+1]
     
     return answer
