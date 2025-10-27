@@ -3,8 +3,10 @@ def solution(my_string):
     
     for i in my_string:
         if i.isupper():
-            answer += chr(ord(i) + 32)
+            # answer += chr(ord(i) + 32)
+            answer += i.lower()
         else:
-            answer += chr(ord(i) - 32)
+            # answer += chr(ord(i) - 32)
+            answer += i.upper()
     
     return answer
