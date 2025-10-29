@@ -8,8 +8,8 @@ def solution(arr):
     
     n = len(cmp1)
     
-    for i in range(n):
-        if i != 0 and cmp1[i] != cmp1[i-1]:
+    for i in range(1, n):
+        if cmp1[i] != cmp1[i-1]:
             answer.append(cmp1[i])
     
     return answer
